@@ -2,7 +2,7 @@ from django.shortcuts import render
 # import nltk
 # nltk.download('punkt')
 
-
+# Views Starts here
 def manageNews(request):
 
     return render(request, 'news/manageNews.html')
@@ -96,8 +96,6 @@ def newsSearch(request):
 
             responseDict.append({'id': key.id, 'title': key.title, 'link': parsedLinkString, 'published': key.published,
                                  'updated': key.updated, 'content': contentValue, 'author': key.author})  # content = key.content
-
-        # print(responseDict)
 
         return render(request, 'news/manageNews.html', {'xmlResponse': xmlResponse, 'searchQuery': searchQuery,
                                                         'responseEntries': responseEntries,

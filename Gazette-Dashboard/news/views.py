@@ -1,7 +1,6 @@
 from django.shortcuts import render
-import urllib.request
-from urllib.error import URLError, HTTPError
-import urllib.parse
+# import nltk
+# nltk.download('punkt')
 
 
 def manageNews(request):
@@ -14,8 +13,8 @@ def addNews(request):
 
 
 from newspaper import Article
-import nltk
 import datetime, dateutil.parser
+
 
 def getNews(request):
 

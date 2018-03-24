@@ -109,7 +109,7 @@
         for (i = 0; i < 20; i++) {
             var div_id=document.getElementById('description_'+i);
             var anchor=div_id.getElementsByTagName('a');
-            console.log(div_id, anchor.length, "tag");
+            console.log(i, div_id, anchor.length, "tag");
             for(j= 0;j<anchor.length; j++)
             {
                 anchor[j].href = "http://localhost:8000/news/getNews?url="+anchor[j].href;

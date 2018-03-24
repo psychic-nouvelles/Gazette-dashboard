@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# unused modules
+
 # import nltk
 # nltk.download('punkt')
 
